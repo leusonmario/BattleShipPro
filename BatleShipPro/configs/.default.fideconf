@@ -1,0 +1,15 @@
+# Lists all features from the model with manual (first digit) and automatic (second digit) selection
+# 0 = deselected, 1 = selected, 2 = undefined
+21BatleShipPro
+21Map
+22SmallMap
+22MediumMap
+22LargeMap
+21PlayMode
+22SinglePlayer
+22MultPlayer
+22Chat
+22Difficulty
+22Easy
+22Hard
+22Impossible

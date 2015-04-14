@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="BatleShipPro">
+				<alt mandatory="true" name="Map">
+					<feature mandatory="true" name="SmallMap"/>
+					<feature mandatory="true" name="MediumMap"/>
+					<feature mandatory="true" name="LargeMap"/>
+				</alt>
+				<alt mandatory="true" name="PlayMode">
+					<feature mandatory="true" name="SinglePlayer"/>
+					<feature mandatory="true" name="MultPlayer"/>
+				</alt>
+				<feature name="Chat"/>
+				<alt name="Difficulty">
+					<feature mandatory="true" name="Easy"/>
+					<feature mandatory="true" name="Hard"/>
+					<feature mandatory="true" name="Impossible"/>
+				</alt>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<imp>
+					<var>MultPlayer</var>
+					<not>
+						<var>Difficulty</var>
+					</not>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Chat</var>
+					<var>MultPlayer</var>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
