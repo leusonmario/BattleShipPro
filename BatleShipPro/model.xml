@@ -17,6 +17,10 @@
 					<feature mandatory="true" name="Hard"/>
 					<feature mandatory="true" name="Impossible"/>
 				</alt>
+				<or name="ExtraElement">
+					<feature mandatory="true" name="buoy"/>
+					<feature mandatory="true" name="shark"/>
+				</or>
 			</and>
 		</struct>
 		<constraints>
