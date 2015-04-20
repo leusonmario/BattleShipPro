@@ -18,8 +18,8 @@
 					<feature mandatory="true" name="Impossible"/>
 				</alt>
 				<or name="ExtraElement">
-					<feature mandatory="true" name="buoy"/>
-					<feature mandatory="true" name="shark"/>
+					<feature mandatory="true" name="Buoy"/>
+					<feature mandatory="true" name="Shark"/>
 				</or>
 			</and>
 		</struct>
